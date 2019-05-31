@@ -5,6 +5,8 @@ lambdata helper functions
 
 import pandas as pd
 import numpy as np
+import unittest
+import math
 
 TEST = pd.DataFrame(np.ones(10))
 
@@ -42,3 +44,13 @@ class DataSci:
             if abs(zscore(nums[i],nums)) > threshold:
                 outliers.append(nums[i])
         return outliers
+
+class TestMethods(unittest.TestCase, DataSci):
+    def test_sqrt(self):
+        self.assertEqual(DataSci.sqrt(100), math.sqrt(100))
+    
+    def test_mean(self):
+        self.assertEqual(DataSci.mean([3,4]), 3.5)
+
+if __name__ == '__main__':
+    unittest.main()
