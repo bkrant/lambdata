@@ -264,9 +264,15 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+  When I review code I pay attention to how descriptive the variable names are - 
+  the more descriptive the better. I also pay attention that code is as succinct
+  as possible - DRY code. I appreciate when others make my code more efficient.
+
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
-  improve this situation?
+  improve this situation? A container would help make code reproducible and deployable
+  which means that using a container, code would be identical to run regardless of 
+  which computer is will be run.
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
